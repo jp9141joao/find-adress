@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Find Address</title>
+        <!-- Link to the JavaScript file that contains the logic to fetch address info -->
+        <script src="find-adress.js">/* Label is used to change the cursor focus */</script>
+    </head>
+    <body>
+        <!-- Form to input CEP and display address details -->
+        <form>
+            <div>
+                <!-- Label and input for CEP (Brazilian postal code) -->
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" placeholder="Enter the CEP" />
+            </div>
+            <div>
+                <!-- Read-only field for street name returned by the API -->
+                <label for="street">Street</label>
+                <input type="text" id="street" readonly />
+            </div>
+            <div>
+                <!-- Read-only field for neighborhood returned by the API -->
+                <label for="neighborhood">Neighborhood</label>
+                <input type="text" id="neighborhood" readonly />
+            </div>
+            <div>
+                <!-- Read-only field for city returned by the API -->
+                <label for="city">City</label>
+                <input type="text" id="city" readonly />
+            </div>
+            <div>
+                <!-- Read-only field for state abbreviation returned by the API -->
+                <label for="state">State</label>
+                <input type="text" id="state" readonly />
+            </div>
+            <div>
+                <!-- Read-only field for area code returned by the API -->
+                <label for="ddd">DDD</label>
+                <input type="text" id="ddd" readonly />
+            </div>
+            <div>
+                <!-- Button triggers the Search function to fetch and display address -->
+                <button type="button" onclick="Search()">Search CEP</button>
+            </div>
+        </form>
+    </body>
+</html>
